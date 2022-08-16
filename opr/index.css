@@ -10,6 +10,9 @@
 nav{
     margin-top: 20px;
 }
+body{
+    background-color: #271F30;
+}
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -23,17 +26,42 @@ nav{
     align-items: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
 }
 #welcome{
     font-size: 7em;
     text-align: center;
+    color: #FEFFFE;
+}
+#subwelcome{
+    color: #F5F5F5;
+    margin-top:30px;
+    margin-bottom: 150px;
+    font-size: 1.3em;
 }
 #opressor{
     color: #00FF8B;
 }
-
-
 .arrowdiv{
     display: flex;
     justify-content: center;
+}
+
+
+#whowe{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#whotitle{
+    color: #7D68DF;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+#whodesc{
+    color: #FEFFFE;
+    font-size: 1.8em;
 }
