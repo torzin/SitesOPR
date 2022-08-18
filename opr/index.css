@@ -9,20 +9,28 @@
 
 nav{
     position: sticky;
-    padding-top: 20px;
     top: 0px;
-    background-color: #271F30
+    background-color: #271F30;
+    display: flex;
+    justify-content: space-between;
 }
 body{
     background-color: #271F30;
 }
+a{
+    color: #00FF8B;
+}
 .navbar{
     display: flex;
     justify-content: flex-end;
+    padding-top: 20px;
 }
 .navitem{
     padding-right: 30px;
     font-family: 'Poppins', sans-serif;
+}
+#logo{
+    padding-left: 10px;
 }
 #reception{
     display: flex;
@@ -39,15 +47,19 @@ body{
 #subwelcome{
     color: #F5F5F5;
     margin-top:30px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     font-size: 1.3em;
 }
 #opressor{
     color: #00FF8B;
 }
-.arrowdiv{
-    display: flex;
-    justify-content: center;
+#arrowdown{
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    width: 80px;
+    height: 80px;
+    animation: MoveUpDown 1.2s linear infinite;
 }
 
 
@@ -164,4 +176,13 @@ body{
     height: 207px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
 }
