@@ -6,7 +6,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 nav{
     position: sticky;
     top: 0px;
