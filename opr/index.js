@@ -1,5 +1,6 @@
-const logobtn = document.getElementById("logo")
+// logo button scroll smooth
 
+const logobtn = document.getElementById("logo")
 
 logobtn.addEventListener('click', () =>{
     window.scroll({
@@ -8,14 +9,3 @@ logobtn.addEventListener('click', () =>{
     })
 })
 
-// check if te scroll was trigged
-
-const lastScrollTop = 612
-
-window.addEventListener("scroll", () =>{
-    const st = window.pageYOffset
-
-    if (st > lastScrollTop){
-        document.getElementById("arrowdown").style.display = "none"
-    }
-})
