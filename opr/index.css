@@ -138,7 +138,7 @@ a{
     margin-top: 40px;
 }
 
-.card{
+.card .cardcontent{
     background-color: #231D2B;
     width: 403px;
     border-radius: 10px;
