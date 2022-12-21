@@ -1,2 +1,66 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
 
+body{
+    background-image: url("assets/background.png");
+}
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: #00000042;
+    z-index: 3;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navitem{
+    margin-top: 20px;
+    font-family: 'Lacquer', cursive;
+    color: #FFFFFF;
+    font-size: 2.25rem;
+}
+.first-page{
+    display: flex;
+}
+.main-itens{
+    width: 812px;
+}
+.title, .subtitle, .see-more-button{
+    font-family: 'Lacquer', cursive;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+.title{
+    font-size: 6em;
+    width: 812px;
+    text-align: left;
+}
+.bh{
+    color: #FA483D;
+}
+.subtitle{
+    margin-top: 20px;
+    font-size: 2.25em;
+}
+.see-more-button{
+    background-color: #FA483D;      
+    font-size: 3.063rem;  
+    padding: 20px;
+    border-radius: 50px 0px 50px 0px;
+    margin-top: 30px;         
+}
+.album-image{
+    width: 600px;
+    height: auto;
+}
