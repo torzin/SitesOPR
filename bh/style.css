@@ -11,6 +11,7 @@
 
 body{
     background-image: url("assets/background.png");
+    background-color: #271F30;
 }
 nav{
     position: sticky;
