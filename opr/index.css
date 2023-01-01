@@ -256,3 +256,7 @@ a{
         font-size: 1em;
     }
 }
+
+div#signature{
+    display: none;
+}
