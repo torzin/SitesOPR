@@ -7,42 +7,98 @@
     <link rel="stylesheet" href="style.css">
     <title>Ball's House</title>
 </head>
-<main>
-    <nav>
-        
-        <ul class="navbar">
-            <a href="#"><li class="navitem">Quem Somos</li></a>
-            <a id="logo">
-                <img  src="assets/logo.png">
-            </a>
-            <a href="#"><li class="navitem">Produções</li></a>
-        </ul>
-    </nav>
-    <body>
-        <div class="first-page">
-            <div class="main-itens">
+<body>
+    <header>
+         <!-- navbar do topo -->
+         <nav>
+            <ul id="navbar">
+                <a href="#"><li class="navitem">Quem Somos</li></a>
+
+                <img id="logo" src="assets/logo.png">
+
+                <a href="#productions"><li class="navitem">Produções</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- primeiro "slide" do site -->
+        <section id="first-page">
+
+            <!-- seção de texto -->
+            <section id="main-itens">
                 <h1 class="title">Ouça o mais novo álbum da<p class="bh">Ball’s House!</p></h1>
                 <p class="subtitle">Confira o lançamento de pou’em all no youtube e spotify!</p>
-                <button class="see-more-button" href="#">Veja agora</button>
-            </div>
-            <img src="assets/imagemalbum.png" class="album-image" />
-        </div>
-        
-        <!--
-            @@@@@@   @@@@@@@   @@@@@@@   @@@@@@@@   @@@@@@    @@@@@@    @@@@@@   @@@@@@@ 
-            @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@   @@@@@@@@  @@@@@@@@
-            @@!  @@@  @@!  @@@  @@!  @@@  @@!       !@@       !@@       @@!  @@@  @@!  @@@
-            !@!  @!@  !@!  @!@  !@!  @!@  !@!       !@!       !@!       !@!  @!@  !@!  @!@
-            @!@  !@!  @!@@!@!   @!@!!@!   @!!!:!    !!@@!!    !!@@!!    @!@  !@!  @!@!!@! 
-            !@!  !!!  !!@!!!    !!@!@!    !!!!!:     !!@!!!    !!@!!!   !@!  !!!  !!@!@!  
-            !!:  !!!  !!:       !!: :!!   !!:            !:!       !:!  !!:  !!!  !!: :!! 
-            :!:  !:!  :!:       :!:  !:!  :!:           !:!       !:!   :!:  !:!  :!:  !:!
-            ::::: ::   ::       ::   :::   :: ::::  :::: ::   :::: ::   ::::: ::  ::   :::
-             : :  :    :         :   : :  : :: ::   :: : :    :: : :     : :  :    :   : :
-        -->
-    </body>
-</main>
+                <button id="see-more-btn" href="#">Veja agora</button>
+            </section>
+
+            <!-- seção da imagem do álbum-->
+            <section id="sect-img">
+                <img src="assets/imagemalbum.png" id="album-img" />
+            </section>
+        </section>
+
+        <!-- seção de produções -->
+        <h1 class="sect-title">PRODUÇÕES</h1>
+        <section id="productions">
+
+            <!-- seção do iframe do youtube-->
+            <section id="youtube-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_NwYaaUnKEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <!-- seção dos botões de mídias sociais -->
+            <section id="social">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5zSiXA70xM4kuSt6qim6jl?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p class="subtitle">Acesse nossas redes sociais:</p>
+                <div id="social-btn">
+                    <ul>
+                        <a href="#">
+                            <li><img  class="social-media" src="assets/spotify.png" alt="Spotify"></li>
+                        </a>
+
+                        <a href="#">
+                            <li><img  class="social-media" src="assets/youtube.png" alt="Youtube"></li>
+                        </a>
+
+                        <a href="#">
+                            <li><img  class="social-media" src="assets/instagram.png" alt="Instragram"></li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <!-- seção quem somos -->
+        <h1 class="sect-title">Quem somos</h1>
+        <section id="we">
+
+            <!-- foto da banda -->
+            <section id="group-image">
+                <img id="group" src="assets/group-photo.jpg" alt="A Banda Ball's House">
+            </section>
+
+            <!-- texto do quem somos -->
+            <section id="we-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aspernatur nam aperiam debitis assumenda voluptatum perferendis quo quaerat totam eius, dolore consequatur facere itaque corrupti, maxime fugit quidem asperiores nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto, sunt dignissimos consequatur nobis sapiente officiis corporis quidem, fugit, quaerat fuga iure! Sed reiciendis delectus corrupti ipsa quas officia nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempora necessitatibus eligendi ut commodi doloremque architecto at quidem fugiat, cumque reiciendis? Id veniam officia corrupti ab ea quibusdam repudiandae dolore?</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>by SGO Development &copy; 2023</p>
+    </footer>
+</body>
 </html>
 
-
-                                      
+   <!--
+                @@@@@@   @@@@@@@   @@@@@@@   @@@@@@@@   @@@@@@    @@@@@@    @@@@@@   @@@@@@@ 
+                @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@   @@@@@@@@  @@@@@@@@
+                @@!  @@@  @@!  @@@  @@!  @@@  @@!       !@@       !@@       @@!  @@@  @@!  @@@
+                !@!  @!@  !@!  @!@  !@!  @!@  !@!       !@!       !@!       !@!  @!@  !@!  @!@
+                @!@  !@!  @!@@!@!   @!@!!@!   @!!!:!    !!@@!!    !!@@!!    @!@  !@!  @!@!!@! 
+                !@!  !!!  !!@!!!    !!@!@!    !!!!!:     !!@!!!    !!@!!!   !@!  !!!  !!@!@!  
+                !!:  !!!  !!:       !!: :!!   !!:            !:!       !:!  !!:  !!!  !!: :!! 
+                :!:  !:!  :!:       :!:  !:!  :!:           !:!       !:!   :!:  !:!  :!:  !:!
+                ::::: ::   ::       ::   :::   :: ::::  :::: ::   :::: ::   ::::: ::  ::   :::
+                : :  :    :         :   : :  : :: ::   :: : :    :: : :     : :  :    :   : :
+            -->
