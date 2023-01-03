@@ -99,8 +99,8 @@ img#album-img{
 .title, .subtitle, #see-more-btn{
     font-family: 'Lacquer', cursive;
     color: #FFFFFF;
-    margin-left: 30px;
 }
+
 
 .title{
     font-size: 3em;
@@ -113,8 +113,8 @@ img#album-img{
 }
 
 .subtitle{
-    margin-top: 20px;
-    font-size: 1.5em;
+    margin-top: 40px;
+    font-size: 2em;
 }
 
 /* botão cta */
@@ -145,12 +145,14 @@ button#see-more-btn:hover{
 #productions{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 40px 30px 0px 20px;
 }
 
 /* iframe sect */
 #youtube-iframe{
-    width: 50vw;
+    width: 54vw;
+    height: 52vh;
+    margin-right: 50px;
 }
 
 /* social media sect */
@@ -158,15 +160,27 @@ button#see-more-btn:hover{
     width: 50vw;
 }
 
-#social-media{
-    width: 50px;
+.social-media{
+    width: 75px;
+}
+
+/* social btn sect */
+#social-btn{
+    margin-top: 20px;
+}
+
+/* social media buttons list */
+#social-btn-list{
+    display: flex;
+    justify-content: space-around;
+
 }
 
 /* who section */
 #we{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 50px 40px 20px 50px;
 }
 
 /* group image sect */
@@ -181,6 +195,12 @@ button#see-more-btn:hover{
 /* who text sect */
 #we-text{
     width: 50vw;
+}
+#we #we-text p{
+    color: #FFFFFF;
+    font-family: 'Lacquer', cursive;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 /* footer */
