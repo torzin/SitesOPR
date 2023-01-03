@@ -1,5 +1,31 @@
 @charset "UTF-8";
+
+/* fonte do site */
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+/* scroll bar config */
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;  /* "auto" or "thin" */
+    scrollbar-color: #FA483D #271f30 ;   /* scroll thumb and track */   
+}   
+
+/* scroll bar personalization */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #271F30;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #FA483D;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #271F30;  /* creates padding around scroll thumb */
+}
+
+/* general config */
 *{
     list-style: none;
     padding: 0;
@@ -12,59 +38,158 @@
 body{
     background-image: url("assets/background.png");
     background-color: #271F30;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
+
+/* header */
 nav{
     position: sticky;
     top: 0px;
     background-color: #00000042;
     z-index: 3;
 }
-.navbar{
+
+#navbar{
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 0px;
 }
+
+#logo{
+    width: 12%;
+}
+
 .navitem{
-    margin-top: 20px;
     font-family: 'Lacquer', cursive;
     color: #FFFFFF;
-    font-size: 2.25rem;
+    font-size: 1.5em;
+    margin-top: 10px;
+    transition: 0.3s;
 }
-.first-page{
+
+.navitem:hover{
+    color: #FA483D;
+   
+}
+
+/* first page */
+#first-page{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.main-itens{
-    width: 812px;
+
+/* album image sect */
+#sect-img{
+    width: 50vw;
 }
-.title, .subtitle, .see-more-button{
+
+img#album-img{
+    width: 80%;
+    height: auto;
+}
+
+/* main itens sect */
+#main-itens{
+    width: 50vw;
+}
+
+.title, .subtitle, #see-more-btn{
     font-family: 'Lacquer', cursive;
     color: #FFFFFF;
     margin-left: 30px;
 }
+
 .title{
-    font-size: 6em;
+    font-size: 3em;
     width: 812px;
     text-align: left;
 }
+
 .bh{
     color: #FA483D;
 }
+
 .subtitle{
     margin-top: 20px;
-    font-size: 2.25em;
+    font-size: 1.5em;
 }
-.see-more-button{
-    background-color: #FA483D;      
-    font-size: 3.063rem;  
-    padding: 20px;
-    border-radius: 50px 0px 50px 0px;
-    margin-top: 30px;         
+
+/* botão cta */
+button#see-more-btn{
+    background-color: #FA483D;     
+    font-size: 1.5em;  
+    padding: 15px;
+    border-radius: 30px 0px 30px 0px;
+    margin-top: 30px;  
+    transition: 0.3s;       
 }
-.album-image{
-    width: 600px;
-    height: auto;
-    margin-right: 20px;
+
+button#see-more-btn:hover{
+    background-color: #ee2a1f;
+    transform: translateY(-2px);
+}
+
+/* section title */
+.sect-title{
+    font-family: "Lacquer", cursive;
+    font-size: 4em;
+    color: #FA483D;
+    text-align: center;
+    margin: 30px;
+}
+
+/* productions sect */
+#productions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* iframe sect */
+#youtube-iframe{
+    width: 50vw;
+}
+
+/* social media sect */
+#social{
+    width: 50vw;
+}
+
+#social-media{
+    width: 50px;
+}
+
+/* who section */
+#we{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* group image sect */
+#group-image{
+    width: 50vw;
+}
+
+#group{
+    width: 70%;
+}
+
+/* who text sect */
+#we-text{
+    width: 50vw;
+}
+
+/* footer */
+footer > p{
+    text-align: center;
+    color: white;
+    background-color: #FA483D;
+    padding: 5px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    margin-top: 15px;
 }
